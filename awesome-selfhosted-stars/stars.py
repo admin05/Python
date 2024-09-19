@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 
+#从这个网址“https://awesome-selfhosted.net/”保存网页为“awesome-selfhosted.html”，然后生成表格，以便找出stars最多的项目。
+
 # 读取本地HTML文件
 with open('awesome-selfhosted.html', 'r', encoding='utf-8') as f:
     soup = BeautifulSoup(f.read(), 'html.parser')
